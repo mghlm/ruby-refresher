@@ -37,7 +37,7 @@ describe 'the Friday test :)' do
     n = every_possible_pairing_of_students(['Bob', 'Dave', 'Clive']) || []
     sorted = n.map {|pair| pair.sort}.sort_by {|pair| [pair.first, pair.last] }
 
-    expect(sorted).to eq [['Bob', 'Clive'], ['Bob', 'Dave'], ['Clive', 'Dave']]
+    expect(sorted).to eq [['Dave', 'Clive'], ['Bob', 'Clive'], ['Bob', 'Dave']]
   end
 
   it 'all_elements_except_first_3' do
